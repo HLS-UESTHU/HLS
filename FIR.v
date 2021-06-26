@@ -1,6 +1,6 @@
 module FIR (
     input Clk,
-    input Rst_n,
+    //input Rst_n,
 
     input [7:0]Xin,
     input [7:0]B0,

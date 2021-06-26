@@ -17,6 +17,13 @@ module top(
     input               PEbar,
     input       [7:0]   data_1,
     input       [7:0]   data_2,
+    input       [7:0]   B0,
+    input       [7:0]   B1,
+    input       [7:0]   B2,
+    input       [7:0]   B3,
+    input       [7:0]   B4,
+    input       [7:0]   B5,
+    input       [7:0]   B6,
     output      [7:0]   out,
 
 //LCD
@@ -40,7 +47,7 @@ module top(
     wire      [3:0]  FIR_out2;
     
 wire    [7:0]   data;
-assign  data = data_1 | data_2;
+assign  data = PEbar ? 8'b0 : (data_1 | data_2);
 
 wire    [7:0]   fir_2;
 wire    [3:0]   ap_2;
@@ -50,13 +57,20 @@ wire    [5:0]   mm_2;
 
 
 
-fir fir(
-    .clk(clk),
-    .rst_n(rst_n),
-    .PEbar_i(PEbar),
-    .data_i(data),
-    .out(fir_2),
-    .ap(ap_2)
+FIRROOT UFIRROOT(
+    .Clk(clk),
+    //.Rst_n(rst_n),
+    .Data_i(data),
+    .B0(B0),
+    .B1(B1),
+    .B2(B2),
+    .B3(B3),
+    .B4(B4),
+    .B5(B5),
+    .B6(B6),
+
+    .FIRout(fir_2),
+    .ROOTout(ap_2)
     );
 assign out=fir_2;
 assign ap=ap_2;
