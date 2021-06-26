@@ -29,7 +29,7 @@ FIRROOT DUT(
     .ROOTout(ROOTout)
 );
 
-reg [7:0] Data_i_vec [0:20];
+reg [7:0] Data_i_vec [0:19];
 reg [7:0] B_vec [0:6];
 initial begin
     $readmemb("Data_i_vec_bin.txt",Data_i_vec);

@@ -8,8 +8,7 @@ function [RodNum] = BinRound(PrecisNum,UpBound,LowBound,Bit)
     % date       :2019-7-16
     
     if ((min(PrecisNum) < LowBound) || (max(PrecisNum) >= UpBound))
-        sprintf("Input number out of bound")
-        PrecisNum
+        fprintf("Input number out of bound, Precise=%f\n",PrecisNum);
     end
     
     RodNum = floor(PrecisNum./(2^(-Bit)))./2^(Bit);
