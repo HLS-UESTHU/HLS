@@ -1,34 +1,63 @@
-`include "FIR.v"
-`default_nettype none
+module FIRROOT_tb();
+reg Clk;
+reg Rst_n;
 
-module FIR_tb();
-reg clk;
-reg rst_n;
+reg [7:0]Data_i;
+reg [7:0]B0;
+reg [7:0]B1;
+reg [7:0]B2;
+reg [7:0]B3;
+reg [7:0]B4;
+reg [7:0]B5;
+reg [7:0]B6;
 
-FIR 
-(
-    .rst_n (rst_n),
-    .clk (clk),
+wire [7:0] FIRout;
+wire [7:0] ROOTout;
+
+FIRROOT DUT(
+    .Rst_n (Rst_n),
+    .Clk (Clk),
+    .Data_i(Data_i),
+    .B0(B0),
+    .B1(B1),
+    .B2(B2),
+    .B3(B3),
+    .B4(B4),
+    .B5(B5),
+    .B6(B6),
+    .FIRout(FIRout),
+    .ROOTout(ROOTout)
 );
 
-localparam CLK_PERIOD = 10;
-always #(CLK_PERIOD/2) clk=~clk;
-
+reg [7:0] Data_i_vec [0:20];
+reg [7:0] B_vec [0:6];
 initial begin
-    $dumpfile("tb_FIR.vcd");
-    $dumpvars(0, tb_FIR);
+    $readmemb("Data_i_vec_bin.txt",Data_i_vec);
+    $readmemb("B_vec_bin.txt",B_vec);
+    B0 = B_vec[0];
+    B1 = B_vec[1];
+    B2 = B_vec[2];
+    B3 = B_vec[3];
+    B4 = B_vec[4];
+    B5 = B_vec[5];
+    B6 = B_vec[6];
 end
 
+localparam CLK_PERIOD = 10;
+always begin
+   #(CLK_PERIOD/2) Clk=~Clk; 
+end
+
+integer Data_i_index = 0;
 initial begin
-    #1 rst_n<=1'bx;clk<=1'bx;
-    #(CLK_PERIOD*3) rst_n<=1;
-    #(CLK_PERIOD*3) rst_n<=0;clk<=0;
-    repeat(5) @(posedge clk);
-    rst_n<=1;
-    @(posedge clk);
-    repeat(2) @(posedge clk);
-    $finish(2);
+    Rst_n = 1'b1;
+    Clk = 1'b0;
+    #4 Rst_n = 1'b0;
+    #(CLK_PERIOD/2) Rst_n = 1'b1;
+
+    forever @(posedge Clk)
+        #1
+        Data_i = Data_i_vec[Data_i_index];
 end
 
 endmodule
-`default_nettype wire

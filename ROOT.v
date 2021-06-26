@@ -3,12 +3,14 @@ module ROOT (
 
     input [7:0] X,
 
-    output [7:0] C
+    output [7:0] C,
+    output reg [7:0] X_r4
 );
     
     reg [7:0]X_r1;
     reg [7:0]X_r2;
     reg [7:0]X_r3;
+    //reg [7:0]X_r4;//Add this stage for original X output
 
     reg C3_3;
     reg C3_2;
@@ -98,6 +100,9 @@ module ROOT (
     .Threshold(T3),
     .Result(C0_0_d));
 
+    always @(posedge Clk ) begin
+        X_r4 <= X_r3;
+    end
     always @(posedge Clk ) begin
         C3_0 <= C3_1;
     end
