@@ -7,6 +7,6 @@ function HW_FIR_sim_agent
     for i = 1:(XinLength-BLength+1)
         Xin = Xin_full(i:(i+6));
         Yout = HW_FIR(Xin,B);
-        fprintf('Yout is %d, its bin is %s\n',Yout, dec2bin(Yout));
+        fprintf('Yout is %d, its bin is %8s\n',Yout, dec2bin(Yout));
     end
 end

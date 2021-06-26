@@ -1,7 +1,7 @@
-`include "RTC.v"
-`include "bcd.v"
-`include "decode7.v"
-`include "fir.v"
+//`include "RTC.v"
+//`include "bcd.v"
+//`include "decode7.v"
+//`include "fir.v"
 
 module top(
 //OVERALL

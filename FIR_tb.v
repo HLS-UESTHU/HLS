@@ -32,8 +32,8 @@ FIRROOT DUT(
 reg [7:0] Data_i_vec [0:19];
 reg [7:0] B_vec [0:6];
 initial begin
-    $readmemb("Data_i_vec_bin.txt",Data_i_vec);
-    $readmemb("B_vec_bin.txt",B_vec);
+    $readmemb("E:/OneDrive/course_HLS/Project/HLS/MATLAB_src/Data_i_vec_bin.txt",Data_i_vec);
+    $readmemb("E:/OneDrive/course_HLS/Project/HLS/MATLAB_src/B_vec_bin.txt",B_vec);
     B0 = B_vec[0];
     B1 = B_vec[1];
     B2 = B_vec[2];
@@ -55,9 +55,11 @@ initial begin
     #4 Rst_n = 1'b0;
     #(CLK_PERIOD/2) Rst_n = 1'b1;
 
-    forever @(posedge Clk)
+    for (Data_i_index=0;Data_i_index<=19;Data_i_index=Data_i_index+1) begin
+        @(posedge Clk)
         #1
         Data_i = Data_i_vec[Data_i_index];
+    end
 end
 
 endmodule

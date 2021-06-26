@@ -40,7 +40,7 @@ module FIR (
     .Product(Reg1_d));
 
     always @(posedge Clk) begin
-        Reg1 <= Reg1_d;
+        Reg1 <= {1'b0,Reg1_d[15:1]};
     end
 
     //*****CS2*****
@@ -139,6 +139,6 @@ module FIR (
         Reg7 <= Reg7_d;
     end
 
-    assign Yout = Reg7;
+    assign Yout = Reg7[15:8];
     
 endmodule

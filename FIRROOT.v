@@ -32,7 +32,7 @@ module FIRROOT (
 
     ROOT UROOT(
     .Clk(Clk),
-    .Rst_n(Rst_n),
+    .X(FIRouttemp),
     .C(ROOTout),
     .X_r4(FIRout)
     );
