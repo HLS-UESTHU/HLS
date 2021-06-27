@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : cell
+Design : top
+Version: Q-2019.12-SP5-2
+Date   : Sun Jun 27 14:34:27 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+RTC                       RTC                             6725.980920
+                                                                    h, n
+U11                       AND3X2          slow            19.958401 
+U12                       AND3X2          slow            19.958401 
+U13                       AND3X2          slow            19.958401 
+U14                       AND3X2          slow            19.958401 
+U15                       AND3X2          slow            19.958401 
+U16                       AND3X2          slow            19.958401 
+U17                       AND3X2          slow            19.958401 
+U18                       AND3X2          slow            19.958401 
+UFIRROOT                  FIRROOT                         45924.279615
+                                                                    h, n
+bcd_RTC_hh                bcd_1                           4364.236861
+                                                                    h, n
+bcd_RTC_mm                bcd_0                           4364.236861
+                                                                    h, n
+bcd_fir                   bcd_2                           4364.236861
+                                                                    h, n
+dec0                      decode7_6                       525.571209
+                                                                    h
+dec1                      decode7_5                       525.571209
+                                                                    h
+dec2                      decode7_4                       525.571209
+                                                                    h
+dec3                      decode7_3                       525.571209
+                                                                    h
+dec4                      decode7_2                       525.571209
+                                                                    h
+dec5                      decode7_1                       525.571209
+                                                                    h
+dec6                      decode7_0                       525.571209
+                                                                    h
+--------------------------------------------------------------------------------
+Total 20 cells                                            69581.636787
+1

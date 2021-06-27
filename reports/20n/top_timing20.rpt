@@ -1,0 +1,3316 @@
+Warning: Design 'top' has '17' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 100
+        -max_paths 100
+Design : top
+Version: Q-2019.12-SP5-2
+Date   : Sun Jun 27 14:38:36 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U426/Y (NOR2X2)                          0.35      16.36 r
+  U412/Y (NOR2X1)                          0.10      16.46 f
+  U470/Y (INVXL)                           0.22      16.67 r
+  U393/Y (NOR2XL)                          0.16      16.83 f
+  U468/Y (OAI21XL)                         0.20      17.03 r
+  U533/Y (INVXL)                           0.15      17.18 f
+  U527/Y (AOI222XL)                        0.44      17.62 r
+  U687/Y (INVXL)                           0.08      17.70 f
+  RTC/hh_reg[1]/D (DFFRHQXL)               0.00      17.70 f
+  data arrival time                                  17.70
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[1]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U426/Y (NOR2X2)                          0.35      16.36 r
+  U412/Y (NOR2X1)                          0.10      16.46 f
+  U470/Y (INVXL)                           0.22      16.67 r
+  U393/Y (NOR2XL)                          0.16      16.83 f
+  U468/Y (OAI21XL)                         0.20      17.03 r
+  U533/Y (INVXL)                           0.15      17.18 f
+  U526/Y (AOI222XL)                        0.44      17.62 r
+  U686/Y (INVXL)                           0.08      17.70 f
+  RTC/hh_reg[3]/D (DFFRHQXL)               0.00      17.70 f
+  data arrival time                                  17.70
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[3]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U426/Y (NOR2X2)                          0.35      16.36 r
+  U412/Y (NOR2X1)                          0.10      16.46 f
+  U470/Y (INVXL)                           0.22      16.67 r
+  U393/Y (NOR2XL)                          0.16      16.83 f
+  U468/Y (OAI21XL)                         0.20      17.03 r
+  U533/Y (INVXL)                           0.15      17.18 f
+  U525/Y (AOI222XL)                        0.44      17.62 r
+  U688/Y (INVXL)                           0.08      17.70 f
+  RTC/hh_reg[2]/D (DFFRHQXL)               0.00      17.70 f
+  data arrival time                                  17.70
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[2]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.70
+  -----------------------------------------------------------
+  slack (MET)                                         0.02
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U427/Y (AOI2BB1XL)                       0.31      16.32 r
+  U412/Y (NOR2X1)                          0.11      16.43 f
+  U470/Y (INVXL)                           0.22      16.65 r
+  U393/Y (NOR2XL)                          0.16      16.81 f
+  U468/Y (OAI21XL)                         0.20      17.01 r
+  U533/Y (INVXL)                           0.15      17.15 f
+  U527/Y (AOI222XL)                        0.44      17.60 r
+  U687/Y (INVXL)                           0.08      17.67 f
+  RTC/hh_reg[1]/D (DFFRHQXL)               0.00      17.67 f
+  data arrival time                                  17.67
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[1]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U427/Y (AOI2BB1XL)                       0.31      16.32 r
+  U412/Y (NOR2X1)                          0.11      16.43 f
+  U470/Y (INVXL)                           0.22      16.65 r
+  U393/Y (NOR2XL)                          0.16      16.81 f
+  U468/Y (OAI21XL)                         0.20      17.01 r
+  U533/Y (INVXL)                           0.15      17.15 f
+  U526/Y (AOI222XL)                        0.44      17.60 r
+  U686/Y (INVXL)                           0.08      17.67 f
+  RTC/hh_reg[3]/D (DFFRHQXL)               0.00      17.67 f
+  data arrival time                                  17.67
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[3]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U427/Y (AOI2BB1XL)                       0.31      16.32 r
+  U412/Y (NOR2X1)                          0.11      16.43 f
+  U470/Y (INVXL)                           0.22      16.65 r
+  U393/Y (NOR2XL)                          0.16      16.81 f
+  U468/Y (OAI21XL)                         0.20      17.01 r
+  U533/Y (INVXL)                           0.15      17.15 f
+  U525/Y (AOI222XL)                        0.44      17.60 r
+  U688/Y (INVXL)                           0.08      17.67 f
+  RTC/hh_reg[2]/D (DFFRHQXL)               0.00      17.67 f
+  data arrival time                                  17.67
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[2]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.67
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U426/Y (NOR2X2)                          0.35      16.36 r
+  U412/Y (NOR2X1)                          0.10      16.46 f
+  U470/Y (INVXL)                           0.22      16.67 r
+  U393/Y (NOR2XL)                          0.16      16.83 f
+  U468/Y (OAI21XL)                         0.20      17.03 r
+  U524/Y (OAI21XL)                         0.13      17.16 f
+  U523/Y (AOI32XL)                         0.21      17.38 r
+  U522/Y (OAI2BB1XL)                       0.09      17.47 f
+  RTC/hh_reg[4]/D (DFFRHQXL)               0.00      17.47 f
+  data arrival time                                  17.47
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[4]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.28      17.72
+  data required time                                 17.72
+  -----------------------------------------------------------
+  data required time                                 17.72
+  data arrival time                                 -17.47
+  -----------------------------------------------------------
+  slack (MET)                                         0.25
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U427/Y (AOI2BB1XL)                       0.31      16.32 r
+  U412/Y (NOR2X1)                          0.11      16.43 f
+  U470/Y (INVXL)                           0.22      16.65 r
+  U393/Y (NOR2XL)                          0.16      16.81 f
+  U468/Y (OAI21XL)                         0.20      17.01 r
+  U524/Y (OAI21XL)                         0.13      17.14 f
+  U523/Y (AOI32XL)                         0.21      17.36 r
+  U522/Y (OAI2BB1XL)                       0.09      17.45 f
+  RTC/hh_reg[4]/D (DFFRHQXL)               0.00      17.45 f
+  data arrival time                                  17.45
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[4]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.28      17.72
+  data required time                                 17.72
+  -----------------------------------------------------------
+  data required time                                 17.72
+  data arrival time                                 -17.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.27
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U426/Y (NOR2X2)                          0.19      16.20 f
+  U412/Y (NOR2X1)                          0.18      16.38 r
+  U470/Y (INVXL)                           0.16      16.53 f
+  U393/Y (NOR2XL)                          0.26      16.79 r
+  U468/Y (OAI21XL)                         0.16      16.95 f
+  U533/Y (INVXL)                           0.19      17.14 r
+  U527/Y (AOI222XL)                        0.18      17.32 f
+  U687/Y (INVXL)                           0.17      17.49 r
+  RTC/hh_reg[1]/D (DFFRHQXL)               0.00      17.49 r
+  data arrival time                                  17.49
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[1]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.49
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U426/Y (NOR2X2)                          0.19      16.20 f
+  U412/Y (NOR2X1)                          0.18      16.38 r
+  U470/Y (INVXL)                           0.16      16.53 f
+  U393/Y (NOR2XL)                          0.26      16.79 r
+  U468/Y (OAI21XL)                         0.16      16.95 f
+  U533/Y (INVXL)                           0.19      17.14 r
+  U526/Y (AOI222XL)                        0.18      17.32 f
+  U686/Y (INVXL)                           0.17      17.49 r
+  RTC/hh_reg[3]/D (DFFRHQXL)               0.00      17.49 r
+  data arrival time                                  17.49
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[3]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.49
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U426/Y (NOR2X2)                          0.19      16.20 f
+  U412/Y (NOR2X1)                          0.18      16.38 r
+  U470/Y (INVXL)                           0.16      16.53 f
+  U393/Y (NOR2XL)                          0.26      16.79 r
+  U468/Y (OAI21XL)                         0.16      16.95 f
+  U533/Y (INVXL)                           0.19      17.14 r
+  U525/Y (AOI222XL)                        0.18      17.32 f
+  U688/Y (INVXL)                           0.17      17.49 r
+  RTC/hh_reg[2]/D (DFFRHQXL)               0.00      17.49 r
+  data arrival time                                  17.49
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[2]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.49
+  -----------------------------------------------------------
+  slack (MET)                                         0.34
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U412/Y (NOR2X1)                          0.18      16.36 r
+  U470/Y (INVXL)                           0.16      16.52 f
+  U393/Y (NOR2XL)                          0.26      16.77 r
+  U468/Y (OAI21XL)                         0.16      16.93 f
+  U533/Y (INVXL)                           0.19      17.12 r
+  U527/Y (AOI222XL)                        0.18      17.30 f
+  U687/Y (INVXL)                           0.17      17.47 r
+  RTC/hh_reg[1]/D (DFFRHQXL)               0.00      17.47 r
+  data arrival time                                  17.47
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[1]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.47
+  -----------------------------------------------------------
+  slack (MET)                                         0.36
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U412/Y (NOR2X1)                          0.18      16.36 r
+  U470/Y (INVXL)                           0.16      16.52 f
+  U393/Y (NOR2XL)                          0.26      16.77 r
+  U468/Y (OAI21XL)                         0.16      16.93 f
+  U533/Y (INVXL)                           0.19      17.12 r
+  U526/Y (AOI222XL)                        0.18      17.30 f
+  U686/Y (INVXL)                           0.17      17.47 r
+  RTC/hh_reg[3]/D (DFFRHQXL)               0.00      17.47 r
+  data arrival time                                  17.47
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[3]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.47
+  -----------------------------------------------------------
+  slack (MET)                                         0.36
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U412/Y (NOR2X1)                          0.18      16.36 r
+  U470/Y (INVXL)                           0.16      16.52 f
+  U393/Y (NOR2XL)                          0.26      16.77 r
+  U468/Y (OAI21XL)                         0.16      16.93 f
+  U533/Y (INVXL)                           0.19      17.12 r
+  U525/Y (AOI222XL)                        0.18      17.30 f
+  U688/Y (INVXL)                           0.17      17.47 r
+  RTC/hh_reg[2]/D (DFFRHQXL)               0.00      17.47 r
+  data arrival time                                  17.47
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[2]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.47
+  -----------------------------------------------------------
+  slack (MET)                                         0.36
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U426/Y (NOR2X2)                          0.19      16.20 f
+  U412/Y (NOR2X1)                          0.18      16.38 r
+  U470/Y (INVXL)                           0.16      16.53 f
+  U393/Y (NOR2XL)                          0.26      16.79 r
+  U468/Y (OAI21XL)                         0.16      16.95 f
+  U524/Y (OAI21XL)                         0.21      17.16 r
+  U523/Y (AOI32XL)                         0.11      17.27 f
+  U522/Y (OAI2BB1XL)                       0.15      17.42 r
+  RTC/hh_reg[4]/D (DFFRHQXL)               0.00      17.42 r
+  data arrival time                                  17.42
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[4]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.41
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U412/Y (NOR2X1)                          0.18      16.36 r
+  U470/Y (INVXL)                           0.16      16.52 f
+  U393/Y (NOR2XL)                          0.26      16.77 r
+  U468/Y (OAI21XL)                         0.16      16.93 f
+  U524/Y (OAI21XL)                         0.21      17.14 r
+  U523/Y (AOI32XL)                         0.11      17.25 f
+  U522/Y (OAI2BB1XL)                       0.15      17.40 r
+  RTC/hh_reg[4]/D (DFFRHQXL)               0.00      17.40 r
+  data arrival time                                  17.40
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[4]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.17      17.83
+  data required time                                 17.83
+  -----------------------------------------------------------
+  data required time                                 17.83
+  data arrival time                                 -17.40
+  -----------------------------------------------------------
+  slack (MET)                                         0.43
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U426/Y (NOR2X2)                          0.35      16.36 r
+  U412/Y (NOR2X1)                          0.10      16.46 f
+  U470/Y (INVXL)                           0.22      16.67 r
+  U393/Y (NOR2XL)                          0.16      16.83 f
+  U523/Y (AOI32XL)                         0.33      17.16 r
+  U522/Y (OAI2BB1XL)                       0.09      17.26 f
+  RTC/hh_reg[4]/D (DFFRHQXL)               0.00      17.26 f
+  data arrival time                                  17.26
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[4]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.28      17.72
+  data required time                                 17.72
+  -----------------------------------------------------------
+  data required time                                 17.72
+  data arrival time                                 -17.26
+  -----------------------------------------------------------
+  slack (MET)                                         0.46
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U427/Y (AOI2BB1XL)                       0.31      16.32 r
+  U412/Y (NOR2X1)                          0.11      16.43 f
+  U470/Y (INVXL)                           0.22      16.65 r
+  U393/Y (NOR2XL)                          0.16      16.81 f
+  U523/Y (AOI32XL)                         0.33      17.14 r
+  U522/Y (OAI2BB1XL)                       0.09      17.24 f
+  RTC/hh_reg[4]/D (DFFRHQXL)               0.00      17.24 f
+  data arrival time                                  17.24
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[4]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.28      17.72
+  data required time                                 17.72
+  -----------------------------------------------------------
+  data required time                                 17.72
+  data arrival time                                 -17.24
+  -----------------------------------------------------------
+  slack (MET)                                         0.48
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U405/Y (NOR2XL)                                         0.25       0.88 r
+  U460/Y (INVXL)                                          0.11       0.99 f
+  U462/Y (NAND2XL)                                        0.14       1.13 r
+  U465/Y (NAND2XL)                                        0.14       1.27 f
+  U737/Y (AOI32XL)                                        0.23       1.50 r
+  h0_7[2] (out)                                           0.00       1.50 r
+  data arrival time                                                  1.50
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U404/Y (NOR2XL)                                         0.25       0.88 r
+  U452/Y (INVXL)                                          0.11       0.99 f
+  U454/Y (NAND2XL)                                        0.14       1.13 r
+  U457/Y (NAND2XL)                                        0.14       1.27 f
+  U749/Y (AOI32XL)                                        0.23       1.50 r
+  m1_7[2] (out)                                           0.00       1.50 r
+  data arrival time                                                  1.50
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U403/Y (NOR2XL)                                         0.25       0.88 r
+  U444/Y (INVXL)                                          0.11       0.99 f
+  U446/Y (NAND2XL)                                        0.14       1.13 r
+  U449/Y (NAND2XL)                                        0.14       1.27 f
+  U746/Y (AOI32XL)                                        0.23       1.50 r
+  m0_7[2] (out)                                           0.00       1.50 r
+  data arrival time                                                  1.50
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: bcd_fir/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[1]/QN (DFFRX1)        0.63       0.63 f
+  U402/Y (NOR2XL)                          0.25       0.88 r
+  U436/Y (INVXL)                           0.11       0.99 f
+  U438/Y (NAND2XL)                         0.14       1.13 r
+  U441/Y (NAND2XL)                         0.14       1.27 f
+  U754/Y (AOI32XL)                         0.23       1.50 r
+  FIR_out0_7[2] (out)                      0.00       1.50 r
+  data arrival time                                   1.50
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.50
+  -----------------------------------------------------------
+  slack (MET)                                         0.50
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U426/Y (NOR2X2)                          0.35      16.36 r
+  U412/Y (NOR2X1)                          0.10      16.46 f
+  U470/Y (INVXL)                           0.22      16.67 r
+  U393/Y (NOR2XL)                          0.16      16.83 f
+  U529/Y (AOI22XL)                         0.26      17.10 r
+  U528/Y (OAI2BB1XL)                       0.09      17.19 f
+  RTC/hh_reg[0]/D (DFFRHQXL)               0.00      17.19 f
+  data arrival time                                  17.19
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[0]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.28      17.72
+  data required time                                 17.72
+  -----------------------------------------------------------
+  data required time                                 17.72
+  data arrival time                                 -17.19
+  -----------------------------------------------------------
+  slack (MET)                                         0.53
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U405/Y (NOR2XL)                                         0.25       0.88 r
+  U460/Y (INVXL)                                          0.11       0.99 f
+  U462/Y (NAND2XL)                                        0.14       1.13 r
+  U465/Y (NAND2XL)                                        0.14       1.27 f
+  U737/Y (AOI32XL)                                        0.19       1.45 r
+  h0_7[2] (out)                                           0.00       1.45 r
+  data arrival time                                                  1.45
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U404/Y (NOR2XL)                                         0.25       0.88 r
+  U452/Y (INVXL)                                          0.11       0.99 f
+  U454/Y (NAND2XL)                                        0.14       1.13 r
+  U457/Y (NAND2XL)                                        0.14       1.27 f
+  U749/Y (AOI32XL)                                        0.19       1.45 r
+  m1_7[2] (out)                                           0.00       1.45 r
+  data arrival time                                                  1.45
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U403/Y (NOR2XL)                                         0.25       0.88 r
+  U444/Y (INVXL)                                          0.11       0.99 f
+  U446/Y (NAND2XL)                                        0.14       1.13 r
+  U449/Y (NAND2XL)                                        0.14       1.27 f
+  U746/Y (AOI32XL)                                        0.19       1.45 r
+  m0_7[2] (out)                                           0.00       1.45 r
+  data arrival time                                                  1.45
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: bcd_fir/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[1]/QN (DFFRX1)        0.63       0.63 f
+  U402/Y (NOR2XL)                          0.25       0.88 r
+  U436/Y (INVXL)                           0.11       0.99 f
+  U438/Y (NAND2XL)                         0.14       1.13 r
+  U441/Y (NAND2XL)                         0.14       1.27 f
+  U754/Y (AOI32XL)                         0.19       1.45 r
+  FIR_out0_7[2] (out)                      0.00       1.45 r
+  data arrival time                                   1.45
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.45
+  -----------------------------------------------------------
+  slack (MET)                                         0.55
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 f
+  initial_time_valid (in)                  0.01      16.01 f
+  U427/Y (AOI2BB1XL)                       0.31      16.32 r
+  U412/Y (NOR2X1)                          0.11      16.43 f
+  U470/Y (INVXL)                           0.22      16.65 r
+  U393/Y (NOR2XL)                          0.16      16.81 f
+  U529/Y (AOI22XL)                         0.26      17.08 r
+  U528/Y (OAI2BB1XL)                       0.09      17.17 f
+  RTC/hh_reg[0]/D (DFFRHQXL)               0.00      17.17 f
+  data arrival time                                  17.17
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[0]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.28      17.72
+  data required time                                 17.72
+  -----------------------------------------------------------
+  data required time                                 17.72
+  data arrival time                                 -17.17
+  -----------------------------------------------------------
+  slack (MET)                                         0.55
+
+
+  Startpoint: bcd_fir/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[1]/QN (DFFRX1)        0.64       0.64 f
+  U420/Y (NOR2X1)                          0.20       0.84 r
+  U534/Y (INVXL)                           0.10       0.94 f
+  U430/Y (NAND2XL)                         0.13       1.07 r
+  U433/Y (NAND2XL)                         0.14       1.21 f
+  U757/Y (AOI32XL)                         0.23       1.44 r
+  FIR_out1_7[2] (out)                      0.00       1.44 r
+  data arrival time                                   1.44
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.44
+  -----------------------------------------------------------
+  slack (MET)                                         0.56
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U405/Y (NOR2XL)                                         0.25       0.88 r
+  U460/Y (INVXL)                                          0.11       0.99 f
+  U506/Y (OAI32XL)                                        0.34       1.33 r
+  U739/Y (OAI21XL)                                        0.10       1.43 f
+  h0_7[3] (out)                                           0.00       1.43 f
+  data arrival time                                                  1.43
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U404/Y (NOR2XL)                                         0.25       0.88 r
+  U452/Y (INVXL)                                          0.11       0.99 f
+  U501/Y (OAI32XL)                                        0.34       1.33 r
+  U751/Y (OAI21XL)                                        0.10       1.43 f
+  m1_7[3] (out)                                           0.00       1.43 f
+  data arrival time                                                  1.43
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U403/Y (NOR2XL)                                         0.25       0.88 r
+  U444/Y (INVXL)                                          0.11       0.99 f
+  U496/Y (OAI32XL)                                        0.34       1.33 r
+  U748/Y (OAI21XL)                                        0.10       1.43 f
+  m0_7[3] (out)                                           0.00       1.43 f
+  data arrival time                                                  1.43
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: bcd_fir/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[1]/QN (DFFRX1)        0.63       0.63 f
+  U402/Y (NOR2XL)                          0.25       0.88 r
+  U436/Y (INVXL)                           0.11       0.99 f
+  U491/Y (OAI32XL)                         0.34       1.33 r
+  U756/Y (OAI21XL)                         0.10       1.43 f
+  FIR_out0_7[3] (out)                      0.00       1.43 f
+  data arrival time                                   1.43
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.57
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.72       0.72 r
+  U429/Y (NAND2XL)                         0.14       0.86 f
+  U428/Y (OR2XL)                           0.28       1.14 f
+  U431/Y (NAND2XL)                         0.17       1.31 r
+  U622/Y (OAI211XL)                        0.11       1.42 f
+  FIR_out1_7[5] (out)                      0.00       1.42 f
+  data arrival time                                   1.42
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.58
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/mm_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U467/Y (NAND2XL)                         0.23      16.40 r
+  U471/Y (INVXL)                           0.18      16.58 f
+  U680/Y (AOI222XL)                        0.47      17.05 r
+  U681/Y (INVXL)                           0.06      17.11 f
+  RTC/mm_reg[4]/D (DFFRX1)                 0.00      17.11 f
+  data arrival time                                  17.11
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/mm_reg[4]/CK (DFFRX1)                0.00      18.00 r
+  library setup time                      -0.30      17.70
+  data required time                                 17.70
+  -----------------------------------------------------------
+  data required time                                 17.70
+  data arrival time                                 -17.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.58
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/mm_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U467/Y (NAND2XL)                         0.23      16.40 r
+  U471/Y (INVXL)                           0.18      16.58 f
+  U684/Y (AOI222XL)                        0.47      17.05 r
+  U685/Y (INVXL)                           0.06      17.11 f
+  RTC/mm_reg[3]/D (DFFRX1)                 0.00      17.11 f
+  data arrival time                                  17.11
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/mm_reg[3]/CK (DFFRX1)                0.00      18.00 r
+  library setup time                      -0.30      17.70
+  data required time                                 17.70
+  -----------------------------------------------------------
+  data required time                                 17.70
+  data arrival time                                 -17.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.58
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/mm_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U467/Y (NAND2XL)                         0.23      16.40 r
+  U471/Y (INVXL)                           0.18      16.58 f
+  U678/Y (AOI222XL)                        0.47      17.05 r
+  U679/Y (INVXL)                           0.08      17.13 f
+  RTC/mm_reg[1]/D (DFFRHQXL)               0.00      17.13 f
+  data arrival time                                  17.13
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/mm_reg[1]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.58
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/mm_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U427/Y (AOI2BB1XL)                       0.17      16.17 f
+  U467/Y (NAND2XL)                         0.23      16.40 r
+  U471/Y (INVXL)                           0.18      16.58 f
+  U682/Y (AOI222XL)                        0.47      17.05 r
+  U683/Y (INVXL)                           0.08      17.13 f
+  RTC/mm_reg[2]/D (DFFRHQXL)               0.00      17.13 f
+  data arrival time                                  17.13
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/mm_reg[2]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.58
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U461/Y (NAND2XL)                                        0.14       0.85 f
+  U459/Y (OR2XL)                                          0.28       1.13 f
+  U463/Y (NAND2XL)                                        0.17       1.30 r
+  U630/Y (OAI211XL)                                       0.11       1.41 f
+  h0_7[5] (out)                                           0.00       1.41 f
+  data arrival time                                                  1.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U453/Y (NAND2XL)                                        0.14       0.85 f
+  U451/Y (OR2XL)                                          0.28       1.13 f
+  U455/Y (NAND2XL)                                        0.17       1.30 r
+  U631/Y (OAI211XL)                                       0.11       1.41 f
+  m1_7[5] (out)                                           0.00       1.41 f
+  data arrival time                                                  1.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U445/Y (NAND2XL)                                        0.14       0.85 f
+  U443/Y (OR2XL)                                          0.28       1.13 f
+  U447/Y (NAND2XL)                                        0.17       1.30 r
+  U623/Y (OAI211XL)                                       0.11       1.41 f
+  m0_7[5] (out)                                           0.00       1.41 f
+  data arrival time                                                  1.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[5]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U437/Y (NAND2XL)                         0.14       0.85 f
+  U435/Y (OR2XL)                           0.28       1.13 f
+  U439/Y (NAND2XL)                         0.17       1.30 r
+  U624/Y (OAI211XL)                        0.11       1.41 f
+  FIR_out0_7[5] (out)                      0.00       1.41 f
+  data arrival time                                   1.41
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.41
+  -----------------------------------------------------------
+  slack (MET)                                         0.59
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U405/Y (NOR2XL)                                         0.11       0.83 f
+  U460/Y (INVXL)                                          0.13       0.96 r
+  U462/Y (NAND2XL)                                        0.11       1.06 f
+  U465/Y (NAND2XL)                                        0.19       1.25 r
+  U737/Y (AOI32XL)                                        0.16       1.41 f
+  h0_7[2] (out)                                           0.00       1.41 f
+  data arrival time                                                  1.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U404/Y (NOR2XL)                                         0.11       0.83 f
+  U452/Y (INVXL)                                          0.13       0.96 r
+  U454/Y (NAND2XL)                                        0.11       1.06 f
+  U457/Y (NAND2XL)                                        0.19       1.25 r
+  U749/Y (AOI32XL)                                        0.16       1.41 f
+  m1_7[2] (out)                                           0.00       1.41 f
+  data arrival time                                                  1.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U403/Y (NOR2XL)                                         0.11       0.83 f
+  U444/Y (INVXL)                                          0.13       0.96 r
+  U446/Y (NAND2XL)                                        0.11       1.06 f
+  U449/Y (NAND2XL)                                        0.19       1.25 r
+  U746/Y (AOI32XL)                                        0.16       1.41 f
+  m0_7[2] (out)                                           0.00       1.41 f
+  data arrival time                                                  1.41
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.59
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U402/Y (NOR2XL)                          0.11       0.83 f
+  U436/Y (INVXL)                           0.13       0.96 r
+  U438/Y (NAND2XL)                         0.11       1.06 f
+  U441/Y (NAND2XL)                         0.19       1.25 r
+  U754/Y (AOI32XL)                         0.16       1.41 f
+  FIR_out0_7[2] (out)                      0.00       1.41 f
+  data arrival time                                   1.41
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.41
+  -----------------------------------------------------------
+  slack (MET)                                         0.59
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.72       0.72 r
+  U429/Y (NAND2XL)                         0.14       0.86 f
+  U430/Y (NAND2XL)                         0.16       1.02 r
+  U433/Y (NAND2XL)                         0.14       1.17 f
+  U757/Y (AOI32XL)                         0.23       1.40 r
+  FIR_out1_7[2] (out)                      0.00       1.40 r
+  data arrival time                                   1.40
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.40
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U405/Y (NOR2XL)                                         0.22       0.78 r
+  U460/Y (INVXL)                                          0.11       0.89 f
+  U462/Y (NAND2XL)                                        0.14       1.02 r
+  U465/Y (NAND2XL)                                        0.14       1.17 f
+  U737/Y (AOI32XL)                                        0.23       1.40 r
+  h0_7[2] (out)                                           0.00       1.40 r
+  data arrival time                                                  1.40
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U404/Y (NOR2XL)                                         0.22       0.78 r
+  U452/Y (INVXL)                                          0.11       0.89 f
+  U454/Y (NAND2XL)                                        0.14       1.02 r
+  U457/Y (NAND2XL)                                        0.14       1.17 f
+  U749/Y (AOI32XL)                                        0.23       1.40 r
+  m1_7[2] (out)                                           0.00       1.40 r
+  data arrival time                                                  1.40
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U403/Y (NOR2XL)                                         0.22       0.78 r
+  U444/Y (INVXL)                                          0.11       0.89 f
+  U446/Y (NAND2XL)                                        0.14       1.02 r
+  U449/Y (NAND2XL)                                        0.14       1.17 f
+  U746/Y (AOI32XL)                                        0.23       1.40 r
+  m0_7[2] (out)                                           0.00       1.40 r
+  data arrival time                                                  1.40
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.56       0.56 f
+  U402/Y (NOR2XL)                          0.22       0.78 r
+  U436/Y (INVXL)                           0.11       0.89 f
+  U438/Y (NAND2XL)                         0.14       1.02 r
+  U441/Y (NAND2XL)                         0.14       1.17 f
+  U754/Y (AOI32XL)                         0.23       1.40 r
+  FIR_out0_7[2] (out)                      0.00       1.40 r
+  data arrival time                                   1.40
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.40
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: bcd_fir/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[1]/QN (DFFRX1)        0.64       0.64 f
+  U420/Y (NOR2X1)                          0.20       0.84 r
+  U534/Y (INVXL)                           0.10       0.94 f
+  U430/Y (NAND2XL)                         0.13       1.07 r
+  U433/Y (NAND2XL)                         0.14       1.21 f
+  U757/Y (AOI32XL)                         0.19       1.40 r
+  FIR_out1_7[2] (out)                      0.00       1.40 r
+  data arrival time                                   1.40
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.40
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U405/Y (NOR2XL)                                         0.25       0.88 r
+  U460/Y (INVXL)                                          0.11       0.99 f
+  U462/Y (NAND2XL)                                        0.14       1.13 r
+  U465/Y (NAND2XL)                                        0.14       1.27 f
+  U738/Y (OAI211XL)                                       0.13       1.39 r
+  h0_7[6] (out)                                           0.00       1.39 r
+  data arrival time                                                  1.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U404/Y (NOR2XL)                                         0.25       0.88 r
+  U452/Y (INVXL)                                          0.11       0.99 f
+  U454/Y (NAND2XL)                                        0.14       1.13 r
+  U457/Y (NAND2XL)                                        0.14       1.27 f
+  U750/Y (OAI211XL)                                       0.13       1.39 r
+  m1_7[6] (out)                                           0.00       1.39 r
+  data arrival time                                                  1.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[1]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[1]/QN (DFFRX1)                    0.63       0.63 f
+  U403/Y (NOR2XL)                                         0.25       0.88 r
+  U444/Y (INVXL)                                          0.11       0.99 f
+  U446/Y (NAND2XL)                                        0.14       1.13 r
+  U449/Y (NAND2XL)                                        0.14       1.27 f
+  U747/Y (OAI211XL)                                       0.13       1.39 r
+  m0_7[6] (out)                                           0.00       1.39 r
+  data arrival time                                                  1.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: bcd_fir/data_a_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[1]/QN (DFFRX1)        0.63       0.63 f
+  U402/Y (NOR2XL)                          0.25       0.88 r
+  U436/Y (INVXL)                           0.11       0.99 f
+  U438/Y (NAND2XL)                         0.14       1.13 r
+  U441/Y (NAND2XL)                         0.14       1.27 f
+  U755/Y (OAI211XL)                        0.13       1.39 r
+  FIR_out0_7[6] (out)                      0.00       1.39 r
+  data arrival time                                   1.39
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.39
+  -----------------------------------------------------------
+  slack (MET)                                         0.61
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.72       0.72 r
+  U429/Y (NAND2XL)                         0.14       0.86 f
+  U428/Y (OR2XL)                           0.28       1.14 f
+  U431/Y (NAND2XL)                         0.17       1.31 r
+  U757/Y (AOI32XL)                         0.08       1.39 f
+  FIR_out1_7[2] (out)                      0.00       1.39 f
+  data arrival time                                   1.39
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.39
+  -----------------------------------------------------------
+  slack (MET)                                         0.61
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U461/Y (NAND2XL)                                        0.14       0.85 f
+  U462/Y (NAND2XL)                                        0.16       1.02 r
+  U465/Y (NAND2XL)                                        0.14       1.16 f
+  U737/Y (AOI32XL)                                        0.23       1.39 r
+  h0_7[2] (out)                                           0.00       1.39 r
+  data arrival time                                                  1.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U453/Y (NAND2XL)                                        0.14       0.85 f
+  U454/Y (NAND2XL)                                        0.16       1.02 r
+  U457/Y (NAND2XL)                                        0.14       1.16 f
+  U749/Y (AOI32XL)                                        0.23       1.39 r
+  m1_7[2] (out)                                           0.00       1.39 r
+  data arrival time                                                  1.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U445/Y (NAND2XL)                                        0.14       0.85 f
+  U446/Y (NAND2XL)                                        0.16       1.02 r
+  U449/Y (NAND2XL)                                        0.14       1.16 f
+  U746/Y (AOI32XL)                                        0.23       1.39 r
+  m0_7[2] (out)                                           0.00       1.39 r
+  data arrival time                                                  1.39
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.61
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U437/Y (NAND2XL)                         0.14       0.85 f
+  U438/Y (NAND2XL)                         0.16       1.02 r
+  U441/Y (NAND2XL)                         0.14       1.16 f
+  U754/Y (AOI32XL)                         0.23       1.39 r
+  FIR_out0_7[2] (out)                      0.00       1.39 r
+  data arrival time                                   1.39
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.39
+  -----------------------------------------------------------
+  slack (MET)                                         0.61
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.72       0.72 r
+  U420/Y (NOR2X1)                          0.09       0.81 f
+  U534/Y (INVXL)                           0.12       0.93 r
+  U430/Y (NAND2XL)                         0.10       1.04 f
+  U433/Y (NAND2XL)                         0.19       1.23 r
+  U757/Y (AOI32XL)                         0.16       1.38 f
+  FIR_out1_7[2] (out)                      0.00       1.38 f
+  data arrival time                                   1.38
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.62
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U461/Y (NAND2XL)                                        0.14       0.85 f
+  U459/Y (OR2XL)                                          0.28       1.13 f
+  U463/Y (NAND2XL)                                        0.17       1.30 r
+  U737/Y (AOI32XL)                                        0.08       1.38 f
+  h0_7[2] (out)                                           0.00       1.38 f
+  data arrival time                                                  1.38
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.62
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U453/Y (NAND2XL)                                        0.14       0.85 f
+  U451/Y (OR2XL)                                          0.28       1.13 f
+  U455/Y (NAND2XL)                                        0.17       1.30 r
+  U749/Y (AOI32XL)                                        0.08       1.38 f
+  m1_7[2] (out)                                           0.00       1.38 f
+  data arrival time                                                  1.38
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.62
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U445/Y (NAND2XL)                                        0.14       0.85 f
+  U443/Y (OR2XL)                                          0.28       1.13 f
+  U447/Y (NAND2XL)                                        0.17       1.30 r
+  U746/Y (AOI32XL)                                        0.08       1.38 f
+  m0_7[2] (out)                                           0.00       1.38 f
+  data arrival time                                                  1.38
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.62
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U437/Y (NAND2XL)                         0.14       0.85 f
+  U435/Y (OR2XL)                           0.28       1.13 f
+  U439/Y (NAND2XL)                         0.17       1.30 r
+  U754/Y (AOI32XL)                         0.08       1.38 f
+  FIR_out0_7[2] (out)                      0.00       1.38 f
+  data arrival time                                   1.38
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.62
+
+
+  Startpoint: bcd_fir/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[1]/QN (DFFRX1)        0.64       0.64 f
+  U420/Y (NOR2X1)                          0.20       0.84 r
+  U534/Y (INVXL)                           0.10       0.94 f
+  U486/Y (OAI32XL)                         0.34       1.28 r
+  U759/Y (OAI21XL)                         0.10       1.38 f
+  FIR_out1_7[3] (out)                      0.00       1.38 f
+  data arrival time                                   1.38
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.62
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.72       0.72 r
+  U429/Y (NAND2XL)                         0.14       0.86 f
+  U428/Y (OR2XL)                           0.28       1.14 f
+  U431/Y (NAND2XL)                         0.17       1.31 r
+  U485/Y (OAI2BB1XL)                       0.06       1.37 f
+  FIR_out1_7[1] (out)                      0.00       1.37 f
+  data arrival time                                   1.37
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U405/Y (NOR2XL)                                         0.11       0.83 f
+  U460/Y (INVXL)                                          0.13       0.96 r
+  U462/Y (NAND2XL)                                        0.11       1.06 f
+  U465/Y (NAND2XL)                                        0.19       1.25 r
+  U738/Y (OAI211XL)                                       0.12       1.37 f
+  h0_7[6] (out)                                           0.00       1.37 f
+  data arrival time                                                  1.37
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U404/Y (NOR2XL)                                         0.11       0.83 f
+  U452/Y (INVXL)                                          0.13       0.96 r
+  U454/Y (NAND2XL)                                        0.11       1.06 f
+  U457/Y (NAND2XL)                                        0.19       1.25 r
+  U750/Y (OAI211XL)                                       0.12       1.37 f
+  m1_7[6] (out)                                           0.00       1.37 f
+  data arrival time                                                  1.37
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U403/Y (NOR2XL)                                         0.11       0.83 f
+  U444/Y (INVXL)                                          0.13       0.96 r
+  U446/Y (NAND2XL)                                        0.11       1.06 f
+  U449/Y (NAND2XL)                                        0.19       1.25 r
+  U747/Y (OAI211XL)                                       0.12       1.37 f
+  m0_7[6] (out)                                           0.00       1.37 f
+  data arrival time                                                  1.37
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.63
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U402/Y (NOR2XL)                          0.11       0.83 f
+  U436/Y (INVXL)                           0.13       0.96 r
+  U438/Y (NAND2XL)                         0.11       1.06 f
+  U441/Y (NAND2XL)                         0.19       1.25 r
+  U755/Y (OAI211XL)                        0.12       1.37 f
+  FIR_out0_7[6] (out)                      0.00       1.37 f
+  data arrival time                                   1.37
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.63
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U461/Y (NAND2XL)                                        0.14       0.85 f
+  U459/Y (OR2XL)                                          0.28       1.13 f
+  U463/Y (NAND2XL)                                        0.17       1.30 r
+  U505/Y (OAI2BB1XL)                                      0.06       1.36 f
+  h0_7[1] (out)                                           0.00       1.36 f
+  data arrival time                                                  1.36
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U453/Y (NAND2XL)                                        0.14       0.85 f
+  U451/Y (OR2XL)                                          0.28       1.13 f
+  U455/Y (NAND2XL)                                        0.17       1.30 r
+  U500/Y (OAI2BB1XL)                                      0.06       1.36 f
+  m1_7[1] (out)                                           0.00       1.36 f
+  data arrival time                                                  1.36
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U445/Y (NAND2XL)                                        0.14       0.85 f
+  U443/Y (OR2XL)                                          0.28       1.13 f
+  U447/Y (NAND2XL)                                        0.17       1.30 r
+  U495/Y (OAI2BB1XL)                                      0.06       1.36 f
+  m0_7[1] (out)                                           0.00       1.36 f
+  data arrival time                                                  1.36
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.64
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U437/Y (NAND2XL)                         0.14       0.85 f
+  U435/Y (OR2XL)                           0.28       1.13 f
+  U439/Y (NAND2XL)                         0.17       1.30 r
+  U490/Y (OAI2BB1XL)                       0.06       1.36 f
+  FIR_out0_7[1] (out)                      0.00       1.36 f
+  data arrival time                                   1.36
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.36
+  -----------------------------------------------------------
+  slack (MET)                                         0.64
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.72       0.72 r
+  U429/Y (NAND2XL)                         0.14       0.86 f
+  U430/Y (NAND2XL)                         0.16       1.02 r
+  U433/Y (NAND2XL)                         0.14       1.17 f
+  U757/Y (AOI32XL)                         0.19       1.35 r
+  FIR_out1_7[2] (out)                      0.00       1.35 r
+  data arrival time                                   1.35
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U405/Y (NOR2XL)                                         0.22       0.78 r
+  U460/Y (INVXL)                                          0.11       0.89 f
+  U462/Y (NAND2XL)                                        0.14       1.02 r
+  U465/Y (NAND2XL)                                        0.14       1.17 f
+  U737/Y (AOI32XL)                                        0.19       1.35 r
+  h0_7[2] (out)                                           0.00       1.35 r
+  data arrival time                                                  1.35
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.65
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U404/Y (NOR2XL)                                         0.22       0.78 r
+  U452/Y (INVXL)                                          0.11       0.89 f
+  U454/Y (NAND2XL)                                        0.14       1.02 r
+  U457/Y (NAND2XL)                                        0.14       1.17 f
+  U749/Y (AOI32XL)                                        0.19       1.35 r
+  m1_7[2] (out)                                           0.00       1.35 r
+  data arrival time                                                  1.35
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.65
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U403/Y (NOR2XL)                                         0.22       0.78 r
+  U444/Y (INVXL)                                          0.11       0.89 f
+  U446/Y (NAND2XL)                                        0.14       1.02 r
+  U449/Y (NAND2XL)                                        0.14       1.17 f
+  U746/Y (AOI32XL)                                        0.19       1.35 r
+  m0_7[2] (out)                                           0.00       1.35 r
+  data arrival time                                                  1.35
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.65
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.56       0.56 f
+  U402/Y (NOR2XL)                          0.22       0.78 r
+  U436/Y (INVXL)                           0.11       0.89 f
+  U438/Y (NAND2XL)                         0.14       1.02 r
+  U441/Y (NAND2XL)                         0.14       1.17 f
+  U754/Y (AOI32XL)                         0.19       1.35 r
+  FIR_out0_7[2] (out)                      0.00       1.35 r
+  data arrival time                                   1.35
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.35
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U393/Y (NOR2XL)                          0.20      16.20 f
+  U468/Y (OAI21XL)                         0.20      16.40 r
+  U533/Y (INVXL)                           0.15      16.54 f
+  U527/Y (AOI222XL)                        0.44      16.99 r
+  U687/Y (INVXL)                           0.08      17.06 f
+  RTC/hh_reg[1]/D (DFFRHQXL)               0.00      17.06 f
+  data arrival time                                  17.06
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[1]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.06
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U393/Y (NOR2XL)                          0.20      16.20 f
+  U468/Y (OAI21XL)                         0.20      16.40 r
+  U533/Y (INVXL)                           0.15      16.54 f
+  U526/Y (AOI222XL)                        0.44      16.99 r
+  U686/Y (INVXL)                           0.08      17.06 f
+  RTC/hh_reg[3]/D (DFFRHQXL)               0.00      17.06 f
+  data arrival time                                  17.06
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[3]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.06
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: initial_time_valid
+              (input port clocked by clk)
+  Endpoint: RTC/hh_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                    16.00      16.00 r
+  initial_time_valid (in)                  0.01      16.01 r
+  U393/Y (NOR2XL)                          0.20      16.20 f
+  U468/Y (OAI21XL)                         0.20      16.40 r
+  U533/Y (INVXL)                           0.15      16.54 f
+  U525/Y (AOI222XL)                        0.44      16.99 r
+  U688/Y (INVXL)                           0.08      17.06 f
+  RTC/hh_reg[2]/D (DFFRHQXL)               0.00      17.06 f
+  data arrival time                                  17.06
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  RTC/hh_reg[2]/CK (DFFRHQXL)              0.00      18.00 r
+  library setup time                      -0.29      17.71
+  data required time                                 17.71
+  -----------------------------------------------------------
+  data required time                                 17.71
+  data arrival time                                 -17.06
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U461/Y (NAND2XL)                                        0.14       0.85 f
+  U462/Y (NAND2XL)                                        0.16       1.02 r
+  U465/Y (NAND2XL)                                        0.14       1.16 f
+  U737/Y (AOI32XL)                                        0.19       1.34 r
+  h0_7[2] (out)                                           0.00       1.34 r
+  data arrival time                                                  1.34
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U453/Y (NAND2XL)                                        0.14       0.85 f
+  U454/Y (NAND2XL)                                        0.16       1.02 r
+  U457/Y (NAND2XL)                                        0.14       1.16 f
+  U749/Y (AOI32XL)                                        0.19       1.34 r
+  m1_7[2] (out)                                           0.00       1.34 r
+  data arrival time                                                  1.34
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U445/Y (NAND2XL)                                        0.14       0.85 f
+  U446/Y (NAND2XL)                                        0.16       1.02 r
+  U449/Y (NAND2XL)                                        0.14       1.16 f
+  U746/Y (AOI32XL)                                        0.19       1.34 r
+  m0_7[2] (out)                                           0.00       1.34 r
+  data arrival time                                                  1.34
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.34
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.66
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U437/Y (NAND2XL)                         0.14       0.85 f
+  U438/Y (NAND2XL)                         0.16       1.02 r
+  U441/Y (NAND2XL)                         0.14       1.16 f
+  U754/Y (AOI32XL)                         0.19       1.34 r
+  FIR_out0_7[2] (out)                      0.00       1.34 r
+  data arrival time                                   1.34
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.34
+  -----------------------------------------------------------
+  slack (MET)                                         0.66
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.72       0.72 r
+  U420/Y (NOR2X1)                          0.09       0.81 f
+  U534/Y (INVXL)                           0.12       0.93 r
+  U430/Y (NAND2XL)                         0.10       1.04 f
+  U433/Y (NAND2XL)                         0.19       1.23 r
+  U758/Y (OAI211XL)                        0.12       1.34 f
+  FIR_out1_7[6] (out)                      0.00       1.34 f
+  data arrival time                                   1.34
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.34
+  -----------------------------------------------------------
+  slack (MET)                                         0.66
+
+
+  Startpoint: bcd_fir/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[2]/Q (DFFRX1)         0.56       0.56 f
+  U420/Y (NOR2X1)                          0.17       0.73 r
+  U534/Y (INVXL)                           0.10       0.83 f
+  U430/Y (NAND2XL)                         0.13       0.96 r
+  U433/Y (NAND2XL)                         0.14       1.11 f
+  U757/Y (AOI32XL)                         0.23       1.34 r
+  FIR_out1_7[2] (out)                      0.00       1.34 r
+  data arrival time                                   1.34
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.34
+  -----------------------------------------------------------
+  slack (MET)                                         0.66
+
+
+  Startpoint: bcd_fir/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[6]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[1]/QN (DFFRX1)        0.64       0.64 f
+  U420/Y (NOR2X1)                          0.20       0.84 r
+  U534/Y (INVXL)                           0.10       0.94 f
+  U430/Y (NAND2XL)                         0.13       1.07 r
+  U433/Y (NAND2XL)                         0.14       1.21 f
+  U758/Y (OAI211XL)                        0.13       1.34 r
+  FIR_out1_7[6] (out)                      0.00       1.34 r
+  data arrival time                                   1.34
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.34
+  -----------------------------------------------------------
+  slack (MET)                                         0.66
+
+
+  Startpoint: bcd_fir/data_b_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out1_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_b_reg[1]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_b_reg[1]/QN (DFFRX1)        0.64       0.64 f
+  U429/Y (NAND2XL)                         0.20       0.84 r
+  U428/Y (OR2XL)                           0.21       1.04 r
+  U431/Y (NAND2XL)                         0.13       1.17 f
+  U757/Y (AOI32XL)                         0.16       1.33 r
+  FIR_out1_7[2] (out)                      0.00       1.33 r
+  data arrival time                                   1.33
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.67
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U405/Y (NOR2XL)                                         0.11       0.83 f
+  U460/Y (INVXL)                                          0.13       0.96 r
+  U462/Y (NAND2XL)                                        0.11       1.06 f
+  U465/Y (NAND2XL)                                        0.19       1.25 r
+  U737/Y (AOI32XL)                                        0.08       1.33 f
+  h0_7[2] (out)                                           0.00       1.33 f
+  data arrival time                                                  1.33
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U404/Y (NOR2XL)                                         0.11       0.83 f
+  U452/Y (INVXL)                                          0.13       0.96 r
+  U454/Y (NAND2XL)                                        0.11       1.06 f
+  U457/Y (NAND2XL)                                        0.19       1.25 r
+  U749/Y (AOI32XL)                                        0.08       1.33 f
+  m1_7[2] (out)                                           0.00       1.33 f
+  data arrival time                                                  1.33
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.71       0.71 r
+  U403/Y (NOR2XL)                                         0.11       0.83 f
+  U444/Y (INVXL)                                          0.13       0.96 r
+  U446/Y (NAND2XL)                                        0.11       1.06 f
+  U449/Y (NAND2XL)                                        0.19       1.25 r
+  U746/Y (AOI32XL)                                        0.08       1.33 f
+  m0_7[2] (out)                                           0.00       1.33 f
+  data arrival time                                                  1.33
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.71       0.71 r
+  U402/Y (NOR2XL)                          0.11       0.83 f
+  U436/Y (INVXL)                           0.13       0.96 r
+  U438/Y (NAND2XL)                         0.11       1.06 f
+  U441/Y (NAND2XL)                         0.19       1.25 r
+  U754/Y (AOI32XL)                         0.08       1.33 f
+  FIR_out0_7[2] (out)                      0.00       1.33 f
+  data arrival time                                   1.33
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.67
+
+
+  Startpoint: bcd_RTC_hh/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: h0_7[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_hh/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_hh/data_a_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U405/Y (NOR2XL)                                         0.22       0.78 r
+  U460/Y (INVXL)                                          0.11       0.89 f
+  U506/Y (OAI32XL)                                        0.34       1.23 r
+  U739/Y (OAI21XL)                                        0.10       1.33 f
+  h0_7[3] (out)                                           0.00       1.33 f
+  data arrival time                                                  1.33
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: bcd_RTC_mm/data_b_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m1_7[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_b_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_b_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U404/Y (NOR2XL)                                         0.22       0.78 r
+  U452/Y (INVXL)                                          0.11       0.89 f
+  U501/Y (OAI32XL)                                        0.34       1.23 r
+  U751/Y (OAI21XL)                                        0.10       1.33 f
+  m1_7[3] (out)                                           0.00       1.33 f
+  data arrival time                                                  1.33
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: bcd_RTC_mm/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: m0_7[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  bcd_RTC_mm/data_a_reg[2]/CK (DFFRX1)                    0.00       0.00 r
+  bcd_RTC_mm/data_a_reg[2]/Q (DFFRX1)                     0.56       0.56 f
+  U403/Y (NOR2XL)                                         0.22       0.78 r
+  U444/Y (INVXL)                                          0.11       0.89 f
+  U496/Y (OAI32XL)                                        0.34       1.23 r
+  U748/Y (OAI21XL)                                        0.10       1.33 f
+  m0_7[3] (out)                                           0.00       1.33 f
+  data arrival time                                                  1.33
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -2.00      18.00
+  output external delay                                 -16.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.67
+
+
+  Startpoint: bcd_fir/data_a_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: FIR_out0_7[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  bcd_fir/data_a_reg[2]/CK (DFFRX1)        0.00       0.00 r
+  bcd_fir/data_a_reg[2]/Q (DFFRX1)         0.56       0.56 f
+  U402/Y (NOR2XL)                          0.22       0.78 r
+  U436/Y (INVXL)                           0.11       0.89 f
+  U491/Y (OAI32XL)                         0.34       1.23 r
+  U756/Y (OAI21XL)                         0.10       1.33 f
+  FIR_out0_7[3] (out)                      0.00       1.33 f
+  data arrival time                                   1.33
+
+  clock clk (rise edge)                   20.00      20.00
+  clock network delay (ideal)              0.00      20.00
+  clock uncertainty                       -2.00      18.00
+  output external delay                  -16.00       2.00
+  data required time                                  2.00
+  -----------------------------------------------------------
+  data required time                                  2.00
+  data arrival time                                  -1.33
+  -----------------------------------------------------------
+  slack (MET)                                         0.67
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: Q-2019.12-SP5-2
+Date   : Sun Jun 27 14:34:27 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /data2/class/wsj/wsj27/project/umc18/aci/sc-x/synopsys/slow.db)
+
+Number of ports:                         1655
+Number of nets:                          4222
+Number of cells:                         2179
+Number of combinational cells:           1839
+Number of sequential cells:               280
+Number of macros/black boxes:               0
+Number of buf/inv:                        251
+Number of references:                      13
+
+Combinational area:              52434.044605
+Buf/Inv area:                     2504.779291
+Noncombinational area:           17147.592182
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 69581.636787
+Total area:                 undefined
+1
