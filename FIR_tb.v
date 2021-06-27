@@ -1,6 +1,6 @@
 module FIRROOT_tb();
 reg Clk;
-reg Rst_n;
+//reg Rst_n;
 
 reg [7:0]Data_i;
 reg [7:0]B0;
@@ -15,7 +15,7 @@ wire [7:0] FIRout;
 wire [7:0] ROOTout;
 
 FIRROOT DUT(
-    .Rst_n (Rst_n),
+//    .Rst_n (Rst_n),
     .Clk (Clk),
     .Data_i(Data_i),
     .B0(B0),
@@ -50,10 +50,10 @@ end
 
 integer Data_i_index = 0;
 initial begin
-    Rst_n = 1'b1;
+//    Rst_n = 1'b1;
     Clk = 1'b0;
-    #4 Rst_n = 1'b0;
-    #(CLK_PERIOD/2) Rst_n = 1'b1;
+//    #4 Rst_n = 1'b0;
+//    #(CLK_PERIOD/2) Rst_n = 1'b1;
 
     for (Data_i_index=0;Data_i_index<=19;Data_i_index=Data_i_index+1) begin
         @(posedge Clk)
