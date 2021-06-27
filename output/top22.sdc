@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Sun Jun 27 14:20:53 2021
+# Created by write_sdc on Sun Jun 27 20:33:11 2021
 
 ###################################################################
 set sdc_version 2.1
@@ -93,7 +93,7 @@ set_driving_cell -lib_cell P8A -pin P [get_ports {B6[3]}]
 set_driving_cell -lib_cell P8A -pin P [get_ports {B6[2]}]
 set_driving_cell -lib_cell P8A -pin P [get_ports {B6[1]}]
 set_driving_cell -lib_cell P8A -pin P [get_ports {B6[0]}]
-create_clock [get_ports clk]  -period 40  -waveform {0 20}
+create_clock [get_ports clk]  -period 22  -waveform {0 11}
 set_clock_uncertainty 2  [get_clocks clk]
 set_input_delay -clock clk  16  [get_ports rst_n]
 set_input_delay -clock clk  16  [get_ports {initial_time_hh[4]}]
@@ -238,6 +238,18 @@ set_output_delay -clock clk  16  [get_ports {FIR_out2_7[3]}]
 set_output_delay -clock clk  16  [get_ports {FIR_out2_7[2]}]
 set_output_delay -clock clk  16  [get_ports {FIR_out2_7[1]}]
 set_output_delay -clock clk  16  [get_ports {FIR_out2_7[0]}]
+set_output_delay -clock clk  16  [get_ports {ap[15]}]
+set_output_delay -clock clk  16  [get_ports {ap[14]}]
+set_output_delay -clock clk  16  [get_ports {ap[13]}]
+set_output_delay -clock clk  16  [get_ports {ap[12]}]
+set_output_delay -clock clk  16  [get_ports {ap[11]}]
+set_output_delay -clock clk  16  [get_ports {ap[10]}]
+set_output_delay -clock clk  16  [get_ports {ap[9]}]
+set_output_delay -clock clk  16  [get_ports {ap[8]}]
+set_output_delay -clock clk  16  [get_ports {ap[7]}]
+set_output_delay -clock clk  16  [get_ports {ap[6]}]
+set_output_delay -clock clk  16  [get_ports {ap[5]}]
+set_output_delay -clock clk  16  [get_ports {ap[4]}]
 set_output_delay -clock clk  16  [get_ports {ap[3]}]
 set_output_delay -clock clk  16  [get_ports {ap[2]}]
 set_output_delay -clock clk  16  [get_ports {ap[1]}]
