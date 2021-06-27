@@ -1,5 +1,5 @@
 module FIR (
-    input Clk,
+    input clk,
     //input Rst_n,
 
     input [7:0]Xin,
@@ -11,7 +11,7 @@ module FIR (
     input [7:0]B5,
     input [7:0]B6,
 
-    output [15:0]Yout
+    output [7:0]Yout
 );
     //Xin : dot left, 5 bits; dot right, 3 bits.
     //B : dot left, 2 bits; dot right, 6 bits.
@@ -39,7 +39,7 @@ module FIR (
     .Multiplier(B6),
     .Product(Reg1_d));
 
-    always @(posedge Clk) begin
+    always @(posedge clk) begin
         Reg1 <= {1'b0,Reg1_d[15:1]};
     end
 
@@ -55,7 +55,7 @@ module FIR (
     .Addend2(Reg1),
     .Sum(Reg2_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         Reg2 <= Reg2_d;
     end
 
@@ -71,7 +71,7 @@ module FIR (
     .Addend2(Reg2),
     .Sum(Reg3_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         Reg3 <= Reg3_d;
     end
 
@@ -87,7 +87,7 @@ module FIR (
     .Addend2(Reg3),
     .Sum(Reg4_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         Reg4 <= Reg4_d;
     end
 
@@ -103,7 +103,7 @@ module FIR (
     .Addend2(Reg4),
     .Sum(Reg5_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         Reg5 <= Reg5_d;
     end
 
@@ -119,7 +119,7 @@ module FIR (
     .Addend2(Reg5),
     .Sum(Reg6_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         Reg6 <= Reg6_d;
     end
 
@@ -135,7 +135,7 @@ module FIR (
     .Addend2(Reg6),
     .Sum(Reg7_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         Reg7 <= Reg7_d;
     end
 

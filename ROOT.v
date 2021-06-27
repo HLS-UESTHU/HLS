@@ -1,9 +1,9 @@
 module ROOT (
-    input Clk,
+    input clk,
 
     input [7:0] X,
 
-    output [7:0] C,
+    output [3:0] C,
     output reg [7:0] X_r4
 );
     
@@ -40,10 +40,10 @@ module ROOT (
     .Threshold(8'd64),
     .Result(C3_3_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         X_r1 <= X;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C3_3 <= C3_3_d;
     end
 
@@ -56,13 +56,13 @@ module ROOT (
     .Threshold(T1),
     .Result(C2_2_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         X_r2 <= X_r1;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C3_2 <= C3_3;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C2_2 <= C2_2_d;
     end
 
@@ -75,16 +75,16 @@ module ROOT (
     .Threshold(T2),
     .Result(C1_1_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         X_r3 <= X_r2;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C3_1 <= C3_2;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C2_1 <= C2_2;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C1_1 <= C1_1_d;
     end
 
@@ -100,19 +100,19 @@ module ROOT (
     .Threshold(T3),
     .Result(C0_0_d));
 
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         X_r4 <= X_r3;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C3_0 <= C3_1;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C2_0 <= C2_1;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C1_0 <= C1_1;
     end
-    always @(posedge Clk ) begin
+    always @(posedge clk ) begin
         C0_0 <= C0_0_d;
     end
 

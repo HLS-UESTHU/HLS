@@ -1,8 +1,3 @@
-//`include "RTC.v"
-//`include "bcd.v"
-//`include "decode7.v"
-//`include "fir.v"
-
 module top(
 //OVERALL
     input               clk,
@@ -47,7 +42,7 @@ module top(
     wire      [3:0]  FIR_out2;
     
 wire    [7:0]   data;
-assign  data = PEbar ? 8'b0 : (data_1 | data_2);
+assign  data = PEbar ?  (data_1 & data_2): 8'b0;
 
 wire    [7:0]   fir_2;
 wire    [3:0]   ap_2;
@@ -58,8 +53,7 @@ wire    [5:0]   mm_2;
 
 
 FIRROOT UFIRROOT(
-    .Clk(clk),
-    //.Rst_n(rst_n),
+    .clk(clk),
     .Data_i(data),
     .B0(B0),
     .B1(B1),

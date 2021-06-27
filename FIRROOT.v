@@ -1,5 +1,5 @@
 module FIRROOT (
-    input Clk,
+    input clk,
     //input Rst_n,
 
     input [7:0]Data_i,
@@ -12,12 +12,12 @@ module FIRROOT (
     input [7:0]B6,
 
     output [7:0] FIRout,
-    output [7:0] ROOTout
+    output [3:0] ROOTout
 );
 
     wire [7:0] FIRouttemp;
     FIR UFIR (
-    .Clk(Clk),
+    .clk(clk),
     //.Rst_n(Rst_n),
     .Xin(Data_i),
     .B0(B0),
@@ -31,7 +31,7 @@ module FIRROOT (
     );
 
     ROOT UROOT(
-    .Clk(Clk),
+    .clk(clk),
     .X(FIRouttemp),
     .C(ROOTout),
     .X_r4(FIRout)

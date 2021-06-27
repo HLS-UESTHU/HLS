@@ -2,14 +2,13 @@ module	bcd(
 
 input				clk	,
 input				rst_n	,
-input	 [7:0]    		bin_in	,
-output   [3:0]   dec_out0,
-output   [3:0]   dec_out1,
-output   [3:0]   dec_out2	
+input	 [7:0]    	bin_in	,
+output   [3:0]   	dec_out0,
+output   [3:0]   	dec_out1,
+output   [3:0]   	dec_out2	
 );
 
-//**************************************************************
-//***define variable********************************************
+
 reg[ 3:0] 				data_0	;
 reg[ 9:0] 				data_1	;
 reg[13:0] 				data_2	;
@@ -22,17 +21,15 @@ reg[ 5:0]				data_d	;
 reg[ 3:0]				data_e	;	
 wire[15:0]              data_i;
 assign data_i={8'b0,bin_in};
-//**************************************************************
-//---ÌáÈ¡data_i[3:0]
-always@(posedge clk or negedge rst_n)
+
+always@(posedge clk or negedge rst_n) begin
 	if(rst_n == 1'b0)
 		data_0 <= 'd0;
 	else
 		data_0 <= data_i[3:0];
+end
 
-//**************************************************************
-//---ÌáÈ¡data_i[7:3]
-always@(posedge clk or negedge rst_n)
+always@(posedge clk or negedge rst_n) begin
 	if(rst_n == 1'b0)
 		data_1 <= 'd0;
     else
@@ -53,12 +50,10 @@ always@(posedge clk or negedge rst_n)
 			4'hd: data_1 <= 10'h208;
 			4'he: data_1 <= 10'h224;
 			4'hf: data_1 <= 10'h240;
-			default: data_1 <= 10'h000;
 		endcase
+end
 
-//**************************************************************
-//---ÌáÈ¡data_i[11:8]
-always@(posedge clk or negedge rst_n)
+always@(posedge clk or negedge rst_n) begin
 	if(rst_n == 1'b0)
 		data_2 <= 'd0;
     else
@@ -79,12 +74,10 @@ always@(posedge clk or negedge rst_n)
 			4'hd: data_2 <= 14'h3328;			
 			4'he: data_2 <= 14'h3584;			
 			4'hf: data_2 <= 14'h3840;			
-			default: data_2 <= 14'h0000;
 		endcase
-		
-//**************************************************************
-//---ÌáÈ¡data_i[15:12]		
-always@(posedge clk or negedge rst_n)				
+end		
+	
+always@(posedge clk or negedge rst_n) begin				
 	if(rst_n == 1'b0)
 		data_3 <= 'd0;
     else
@@ -105,10 +98,9 @@ always@(posedge clk or negedge rst_n)
 			4'hd: data_3 <= 19'h53248;			
 			4'he: data_3 <= 19'h57344;				
 			4'hf: data_3 <= 19'h61440;					  
-			default: data_3 <= 19'h00000;
 		endcase
-
-always@(posedge clk or negedge rst_n)  
+end
+always@(posedge clk or negedge rst_n)  begin
 	if(rst_n == 1'b0)
 		begin
 			data_a <= 'd0;
@@ -125,17 +117,16 @@ always@(posedge clk or negedge rst_n)
 			data_d <= addbcd4(data_c[5:4],4'h0,		  data_2[13:12],data_3[15:12]);
 			data_e <= data_d[5:4] + data_3[18:16];
 		end
+end
 
-
-assign data_o = {data_e,data_d[3:0],data_c[3:0],data_b[3:0],data_a[3:0]};
 assign 	dec_out0 = 	data_a[3:0];
 assign 	dec_out1 = 	data_b[3:0];
 assign 	dec_out2 = 	data_c[3:0];
 
 
 //**************************************************************
-//---function(¶¨ÒåÒ»¸ö×ª»»º¯Êý)
-//ËÄ¸öËÄÎ»¶þ½øÖÆÎ»Ïà¼Ó×î´óÖµÎª:4'hf+4'hf+4'hf+4'hf=6'd3C		
+//---function(ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+//ï¿½Ä¸ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÎª:4'hf+4'hf+4'hf+4'hf=6'd3C		
 function [5:0] addbcd4	; 
 input	[3:0] 	add1	;
 input	[3:0] 	add2	;
@@ -144,17 +135,17 @@ input	[3:0] 	add4	;
 	begin
 		addbcd4 = add1 + add2 + add3 + add4;
 		if(addbcd4 > 6'h3b)
-			addbcd4 = addbcd4 + 5'h24;	//´óÓÚÊ®½øÖÆÊý59£¬½á¹û¼ÓÊ®½øÖÆ36
+			addbcd4 = addbcd4 + 6'h24;	//ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½59ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½36
 		if(addbcd4 > 6'h31)
-			addbcd4 = addbcd4 + 5'h1e;	//´óÓÚÊ®½øÖÆÊý49£¬½á¹û¼ÓÊ®½øÖÆ30
+			addbcd4 = addbcd4 + 6'h1e;	//ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½49ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½30
 		if(addbcd4 > 6'h27)
-			addbcd4 = addbcd4 + 5'h18;	//´óÓÚÊ®½øÖÆÊý39£¬½á¹û¼ÓÊ®½øÖÆ24
+			addbcd4 = addbcd4 + 6'h18;	//ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½39ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½24
 		if(addbcd4 > 6'h1d)
-			addbcd4 = addbcd4 + 5'h12;	//´óÓÚÊ®½øÖÆÊý29£¬½á¹û¼ÓÊ®½øÖÆ18
+			addbcd4 = addbcd4 + 6'h12;	//ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½29ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½18
 		else if(addbcd4 > 6'h13)
-			addbcd4 = addbcd4 + 4'hc;	//´óÓÚÊ®½øÖÆÊý19£¬½á¹û¼ÓÊ®½øÖÆ12
+			addbcd4 = addbcd4 + 6'hc;	//ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½19ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½12
 		else if(addbcd4 > 6'h09)
-			addbcd4 = addbcd4 + 4'h6;	//´óÓÚÊ®½øÖÆÊý9£¬½á¹û¼ÓÊ®½øÖÆ6
+			addbcd4 = addbcd4 + 6'h6;	//ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½9ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½6
 	end
 endfunction
 

@@ -51,39 +51,32 @@ begin
             hh<=initial_time_hh;
             mm<=initial_time_mm;
         end
-        
-    end
-end
-
-
-always @(posedge clk_div or negedge rst_n) begin
-    if(!rst_n)
-    begin
-        mm<=0;
-        hh<=0;
-    end
-    else begin
+        else
+        begin
             if(mm_full)
             begin
                 if(mm<6'd59)
                 begin
-                    mm=mm+1;
+                    mm<=mm+1;
                 end
                 else
                 begin
-                    mm=0;
+                    mm<=0;
                     if(hh==6'd23)
                     begin
-                        hh=0;
+                        hh<=0;
                     end
                     else
                     begin
-                        hh=hh+1;
+                        hh<=hh+1;
                     end
                 end
             end
+        end
     end
 end
+
+
 
 always@(posedge clk_div or negedge rst_n)
 begin
