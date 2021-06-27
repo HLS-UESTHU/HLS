@@ -1,3 +1,11 @@
+# What's this
+- A 8bit fir design in pipeline
+- A 8bit sqrt 
+- A single cycle BCD decoder
+- A strange 3-7 lcd decoder
+- A RTC
+- Put them all together
+
 # Entity: top
 ## Diagram
 ![Diagram](top.svg "Diagram")
