@@ -28,11 +28,12 @@ begin
         if(cnt<CLK_DIV_RATIO)
         begin
             cnt<=cnt+1;
+            clk_div<=0;
         end
         else
         begin
             cnt<=0;
-            clk_div<=~clk_div;
+            clk_div<=1;
         end
         
     end
@@ -53,25 +54,27 @@ begin
         end
         else
         begin
-            if(mm_full)
-            begin
-                if(mm<6'd59)
+            if(clk_div) begin
+                if(mm_full)
                 begin
-                    mm<=mm+1;
-                end
-                else
-                begin
-                    mm<=0;
-                    if(hh==6'd23)
+                    if(mm<6'd59)
                     begin
-                        hh<=0;
+                        mm<=mm+1;
                     end
                     else
                     begin
-                        hh<=hh+1;
+                        mm<=0;
+                        if(hh==6'd23)
+                        begin
+                            hh<=0;
+                        end
+                        else
+                        begin
+                            hh<=hh+1;
+                        end
                     end
                 end
-            end
+             end
         end
     end
 end
@@ -87,8 +90,8 @@ begin
     end
     else
     begin
-//        if(clk_div)
-//        begin
+        if(clk_div)
+        begin
             if(mm_cnt<6'd59)
             begin
                 mm_cnt<=mm_cnt+1;
@@ -99,7 +102,7 @@ begin
                 mm_cnt<=0;
                 mm_full<=1;
             end
-//        end
+        end
     end
 end
 

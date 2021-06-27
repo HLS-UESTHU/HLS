@@ -29,7 +29,7 @@ module top(
     output      [6:0]  FIR_out0_7,
     output      [6:0]  FIR_out1_7,
     output      [6:0]  FIR_out2_7,
-    output      [3:0]  ap
+    output      [15:0] ap
 );
 
 
@@ -67,7 +67,11 @@ FIRROOT UFIRROOT(
     .ROOTout(ap_2)
     );
 assign out=fir_2;
-assign ap=ap_2;
+
+decodeap decap(
+    .in(ap_2),
+    .led(ap)
+);
 
 bcd bcd_fir(
     .bin_in(fir_2),
