@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: Q-2019.12-SP5-2
+Date   : Sun Jun 27 20:45:17 2021
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /data2/class/wsj/wsj27/project/umc18/aci/sc-x/synopsys/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   6.5162 mW   (81%)
+  Net Switching Power  =   1.4856 mW   (19%)
+                         ---------
+Total Dynamic Power    =   8.0018 mW  (100%)
+
+Cell Leakage Power     =   6.7742 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.1566            0.0000            0.1566  (   1.96%)
+register           3.7075        8.2982e-02        8.5043e+05            3.7914  (  47.34%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      2.8087            1.2460        5.9238e+06            4.0607  (  50.70%)
+--------------------------------------------------------------------------------------------------
+Total              6.5162 mW         1.4856 mW     6.7742e+06 pW         8.0086 mW
+1

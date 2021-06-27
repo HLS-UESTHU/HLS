@@ -1,0 +1,33 @@
+Warning: Design 'top' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : top
+Version: Q-2019.12-SP5-2
+Date   : Sun Jun 27 20:25:31 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /data2/class/wsj/wsj27/project/umc18/aci/sc-x/synopsys/slow.db)
+
+Number of ports:                          303
+Number of nets:                          1906
+Number of cells:                         1277
+Number of combinational cells:           1106
+Number of sequential cells:               165
+Number of macros/black boxes:               0
+Number of buf/inv:                        120
+Number of references:                      21
+
+Combinational area:              36617.012239
+Buf/Inv area:                     1197.504044
+Noncombinational area:            9047.808109
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 45664.820349
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
